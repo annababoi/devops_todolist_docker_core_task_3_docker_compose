@@ -84,3 +84,9 @@ database volume. All saved accounts and todos will be deleted.
 ```bash
 docker compose down -v
 ```
+
+## MySQL image configuration
+
+The db service builds its image from Dockerfile.mysql in the repository root.
+This file defines the MySQL database and credentials.
+Docker Compose mounts the mysql_data volume at /var/lib/mysql.
